@@ -33,15 +33,15 @@ src='../../images/reduce.png'></cover-image>
 <!--/ 缩放 -->
 
 <!-- 底部信息 -->
-<cover-view wx:if="{{detail}}" class='foot'>
+<cover-view wx:if="{{detail}}" class='foot' bindtap='startmap'>
   <cover-view class='foot-left'>
-    <cover-view class='h2'>星巴克门店（营业中）</cover-view>
-    <cover-view class='p'>借款时间：9:00-18:00</cover-view>
-    <cover-view class='p'>浦东新区金高路35</cover-view>
+    <cover-view class='h2'>{{item.name}}</cover-view>
+    <cover-view class='p'>{{item.time}}</cover-view>
+    <cover-view class='p'>{{item.address}}</cover-view>
   </cover-view>
   <cover-view class='foot-right'>
     <!-- <cover-image class='top' src='../../images/plus.png' bindtap='plus'></cover-image> -->
-    <cover-view>680cm</cover-view>
+    <cover-view>{{item.num}}</cover-view>
   </cover-view>
 </cover-view>
 <!--/ 底部信息 -->

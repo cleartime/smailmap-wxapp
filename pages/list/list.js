@@ -4,23 +4,29 @@ const app = getApp()
 Page({
   data: {
     list:[{
-      latitude: 12,
-      longitude: 12,
+      latitude: 31.25956,
+      longitude: 121.52609,
       name: '星巴克门店（营业中）',
       time: '借款时间：9:00-18:00',
       address: '浦东新区金高路35',
       num: '680cm'
     }, {
+        latitude: 31.25956,
+        longitude: 121.52609,
       name: '星巴克门店（营业中）',
       time: '借款时间：9:00-18:00',
       address: '浦东新区金高路35',
       num: '680cm'
       }, {
+        latitude: 31.25956,
+        longitude: 121.52609,
         name: '星巴克门店（营业中）',
         time: '借款时间：9:00-18:00',
         address: '浦东新区金高路35',
         num: '680cm'
     }, {
+        latitude: 31.25956,
+        longitude: 121.52609,
       name: '星巴克门店（营业中）',
       time: '借款时间：9:00-18:00',
       address: '浦东新区金高路35',

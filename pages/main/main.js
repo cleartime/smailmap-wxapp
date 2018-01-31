@@ -4,8 +4,16 @@ const app = getApp()
 var scale = 0;
 Page({
   data: {
-    latitude: '',
-    longitude: '',
+    item: {
+      latitude: 31.25956,
+      longitude: 121.52609,
+      name: '星巴克门店（营业中）',
+      time: '借款时间：9:00-18:00',
+      address: '浦东新区金高路35',
+      num: '680cm'
+    },
+    latitude: 31.25956,
+    longitude: 121.52609,
     controls: '',
     detail: false,
     markers: [{
@@ -31,7 +39,7 @@ Page({
         var longitude = res.longitude
         var speed = res.speed
         var accuracy = res.accuracy
-        console.log('当前定位数据' + res)
+        console.log('当前定位数据' + JSON.stringify(res))
         _this.setData({
           latitude: latitude,
           longitude: longitude
@@ -47,6 +55,16 @@ Page({
           }]
         })
       }
+    })
+  },
+  startmap: function(){
+    var item = this.data.item;
+    console.log(item)
+    wx.openLocation({
+      latitude: item.latitude,
+      longitude: item.longitude,
+      name: item.name,
+      address: item.address
     })
   },
   linkto: function(){
