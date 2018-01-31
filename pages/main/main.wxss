@@ -54,6 +54,41 @@
   width: 36.5px;
   height: 36.5px;
 }
+.foot{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200rpx;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.foot .foot-left{
+  color: #999;
+  font-size: 12px;
+  padding-left: 15px;
+  flex: 3
+}
+.foot .foot-left .h2{
+  font-size: 16px;
+  color: #4D4D4D;
+  line-height: 25px
+}
+.foot .foot-left .p{
+  line-height: 20px
+}
+.foot .foot-right{
+  flex: 1;
+  background: #729DF7;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 12px
+}
 map{
   height: 100%;
   width: 100%;

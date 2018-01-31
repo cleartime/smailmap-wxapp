@@ -20,6 +20,9 @@ Page({
     scale: 15,
   },
   onLoad: function () {
+    this.init();
+  },
+  init: function(){
     var _this = this;
     wx.getLocation({
       type: 'wgs84',
@@ -28,13 +31,13 @@ Page({
         var longitude = res.longitude
         var speed = res.speed
         var accuracy = res.accuracy
-        console.log('当前定位数据'+res)
+        console.log('当前定位数据' + res)
         _this.setData({
           latitude: latitude,
           longitude: longitude
         })
         _this.setData({
-          markers:[{
+          markers: [{
             iconPath: '../../images/icon.png',
             width: 30,
             height: 60,
@@ -44,6 +47,16 @@ Page({
           }]
         })
       }
+    })
+  },
+  linkto: function(){
+    wx.navigateTo({
+      url: '../list/list'
+    })
+  },
+  markertap: function(e){
+    this.setData({
+      detail: true
     })
   },
   refresh: function(){

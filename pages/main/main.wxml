@@ -1,8 +1,18 @@
 <view class='main'>
- 
-  <map id="55" longitude="{{longitude}}" latitude="{{latitude}}" scale="{{scale}}" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location>
+  <map 
+  id="55" 
+  longitude="{{longitude}}" 
+  latitude="{{latitude}}" 
+  scale="{{scale}}" 
+  controls="{{controls}}" 
+  bindcontroltap="controltap" 
+  markers="{{markers}}" 
+  bindmarkertap="markertap" 
+  polyline="{{polyline}}"
+  bindregionchange="regionchange" 
+  show-location>
  <!-- 头部  -->
- <cover-view class='head'>
+ <cover-view class='head' bindtap='linkto'>
       <cover-image class='bg' src='../../images/bg.png'></cover-image>
       <cover-image class='img1' src='../../images/door.png'></cover-image>
       <cover-view class='text'>线下借款门店，列表查看</cover-view>
@@ -22,13 +32,15 @@ src='../../images/reduce.png'></cover-image>
     </cover-view>
 <!--/ 缩放 -->
 
-<cover-view wx:if="{{detail}}">
-  <cover-view>
-    <cover-view>星巴克门店（营业中）</cover-view>
-    <cover-view>借款时间：9:00-18:00</cover-view>
-    <cover-view>浦东新区金高路35</cover-view>
+<cover-view wx:if="{{detail}}" class='foot'>
+  <cover-view class='foot-left'>
+    <cover-view class='h2'>星巴克门店（营业中）</cover-view>
+    <cover-view class='p'>借款时间：9:00-18:00</cover-view>
+    <cover-view class='p'>浦东新区金高路35</cover-view>
   </cover-view>
-  <cover-view>
+  <cover-view class='foot-right'>
+    <!-- <cover-image class='top' src='../../images/plus.png' bindtap='plus'></cover-image> -->
+    <cover-view>680cm</cover-view>
   </cover-view>
 </cover-view>
 
