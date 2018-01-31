@@ -32,6 +32,7 @@ src='../../images/reduce.png'></cover-image>
     </cover-view>
 <!--/ 缩放 -->
 
+<!-- 底部信息 -->
 <cover-view wx:if="{{detail}}" class='foot'>
   <cover-view class='foot-left'>
     <cover-view class='h2'>星巴克门店（营业中）</cover-view>
@@ -43,6 +44,6 @@ src='../../images/reduce.png'></cover-image>
     <cover-view>680cm</cover-view>
   </cover-view>
 </cover-view>
-
+<!--/ 底部信息 -->
   </map>
 </view>

@@ -1,0 +1,37 @@
+.list{
+  background: #F2F2F2;
+  height: 100vmax;
+  padding-top: 15px;
+}
+.item{
+  margin-bottom: 15px;
+  height: 200rpx;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.item .left{
+  color: #999;
+  font-size: 12px;
+  padding-left: 15px;
+  flex: 3
+}
+.item .left .h2{
+  font-size: 16px;
+  color: #4D4D4D;
+  line-height: 25px
+}
+.item .left .p{
+  line-height: 20px
+}
+.item .right{
+  flex: 1;
+  background: #729DF7;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 12px
+}
